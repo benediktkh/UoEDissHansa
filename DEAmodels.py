@@ -341,7 +341,7 @@ def DSBMModel(input,output,inputfix = None, outputfix = None, carrygood = None, 
             results[f"DMU{i+1}"] = score[i]
     else:
         for i in range(n):
-            results[names[i]] = [score[i]]
+            results[names[i]] = score[i]
 
     # Return depending on return_type
     if return_type in [0,"dict","Dict","dictionary","Dictionary"]:
